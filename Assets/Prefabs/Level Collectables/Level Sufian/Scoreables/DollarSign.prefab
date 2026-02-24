@@ -4945,5 +4945,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6190d78be3bd345b98a8731f59f26664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectableController
-  timeInScene: 3
-  rotation: {x: 0, y: 0, z: 0}
+  timeInScene: 10
+  rotation: {x: 0, y: 30, z: 0}

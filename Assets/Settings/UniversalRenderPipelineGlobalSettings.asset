@@ -65,8 +65,8 @@ MonoBehaviour:
       - rid: 8161303219847823369
       - rid: 8161303219847823370
       - rid: 8161303219847823371
-      - rid: 8262159741034430464
-      - rid: 8262159741034430465
+      - rid: 8364811221993521152
+      - rid: 8364811221993521153
     m_RuntimeSettings:
       m_List: []
   m_AssetVersion: 10
@@ -382,12 +382,12 @@ MonoBehaviour:
           - {r: 0.8, g: 1, b: 0.8, a: 1}
           - {r: 0.2, g: 0.4, b: 0.2, a: 1}
           - {r: 0.125, g: 0.22, b: 0.36, a: 1}
-    - rid: 8262159741034430464
+    - rid: 8364811221993521152
       type: {class: URPTerrainShaderSetting, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         m_Version: 0
         m_IncludeTerrainShaders: 1
-    - rid: 8262159741034430465
+    - rid: 8364811221993521153
       type: {class: UniversalRenderPipelineRuntimeTerrainShaders, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.Runtime}
       data:
         m_Version: 0
