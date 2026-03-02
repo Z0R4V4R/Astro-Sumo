@@ -47,5 +47,6 @@ public static class GlobalEvents
     {
         SceneIndex++;
         OnSceneChange?.Invoke(SceneIndex);
+    
     }
 }
