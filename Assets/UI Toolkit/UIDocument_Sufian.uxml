@@ -6,7 +6,7 @@
         <ui:ProgressBar value="90" title="Level Time" name="LevelTimeRemaning" high-value="90"/>
         <ui:Label text="9th Grade Score: 0" name="9thScore" style="color: rgb(255, 255, 255);"/>
         <ui:Label text="10th Grade Score: 0" name="10thScore" style="color: rgb(255, 255, 255);"/>
-        <ui:Label text="11th Grade Score: 0" name="11hScore" style="color: rgb(255, 255, 255);"/>
-        <ui:Label text="12th Grade Score: 0" name="12hScore" style="border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"/>
+        <ui:Label text="11th Grade Score: 0" name="11thScore" style="color: rgb(255, 255, 255);"/>
+        <ui:Label text="12th Grade Score: 0" name="12thScore" style="border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"/>
     </ui:VisualElement>
 </ui:UXML>
