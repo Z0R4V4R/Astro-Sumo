@@ -79,11 +79,12 @@ namespace Daniel
         }
         private void SwitchScenes()
         {
-            if (levelTime == 0)
+            if (levelTime <= 0)
             {
                 GlobalEvents.SendSceneIndex();
-                if (GlobalEvents.SceneIndex < SceneManager.sceneCountInBuildSettings)
+                if (GlobalEvents.SceneIndex <= SceneManager.sceneCountInBuildSettings)
                 {
+                    Debug.Log(GlobalEvents.SceneIndex);
                     SceneManager.LoadScene(GlobalEvents.SceneIndex);
                 }
             }
