@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Roguelike Scenes/Island 1.unity
-    guid: a4b96ad7a65484fd4a83cb97540eee50
+    path: Assets/Scenes/Template Scenes/Island_Daniel.unity
+    guid: 7dcb8f58f23c34575a1646cb48a7ea1e
   - enabled: 1
-    path: Assets/Scenes/Roguelike Scenes/Island 2.unity
-    guid: 4341840d4de39484abc54b0819c63459
+    path: Assets/Scenes/Template Scenes/Island_Daniel 1.unity
+    guid: 5ceab3d2051ab4686804844b301bee06
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

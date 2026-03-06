@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 63931235}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7088079, y: 0.000105185965, z: -0.000104680475, w: 0.7054016}
-  m_LocalPosition: {x: -11.4, y: 27.41, z: -5.13}
+  m_LocalPosition: {x: -1.8, y: 21.94, z: 0.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -310,11 +310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1463359335791524856, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
       propertyPath: powerupRate
-      value: 12
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1463359335791524856, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
       propertyPath: scoreableRate
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1463359335791524856, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
       propertyPath: powerups.Array.size
@@ -336,6 +336,10 @@ PrefabInstance:
       propertyPath: 'scoreable.Array.data[0]'
       value: 
       objectReference: {fileID: 148032, guid: 7272ed13db513418ab38b14d5e22744b, type: 3}
+    - target: {fileID: 5410294327606792781, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
+      propertyPath: m_Name
+      value: SpawnManager
+      objectReference: {fileID: 0}
     - target: {fileID: 8358332775311980685, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -345,6 +349,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ac3d72bc463431baa1ab39f326df86, type: 3}
+--- !u!1 &559405700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559405703}
+  - component: {fileID: 559405702}
+  - component: {fileID: 559405701}
+  m_Layer: 0
+  m_Name: UI Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &559405701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559405700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: 1da703908536747fc9c64b32db9481d6, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: bb088420b1d774fe2958c6d6e63982eb, type: 3}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
+--- !u!114 &559405702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559405700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552e7c74b8bbb4a7e9b65daa9f78a9e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::YourName.UIController
+--- !u!4 &559405703
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559405700}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.60334, y: -0.65737, z: -7.61304}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &916282168
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -359,15 +431,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4841026561287457424, guid: 2023f832bd7544003901d14817adce02, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 11.11
       objectReference: {fileID: 0}
     - target: {fileID: 4841026561287457424, guid: 2023f832bd7544003901d14817adce02, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.65736
       objectReference: {fileID: 0}
     - target: {fileID: 4841026561287457424, guid: 2023f832bd7544003901d14817adce02, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5.58
       objectReference: {fileID: 0}
     - target: {fileID: 4841026561287457424, guid: 2023f832bd7544003901d14817adce02, type: 3}
       propertyPath: m_LocalRotation.w
@@ -537,3 +609,4 @@ SceneRoots:
   - {fileID: 1980743775}
   - {fileID: 916282168}
   - {fileID: 355841386}
+  - {fileID: 559405703}

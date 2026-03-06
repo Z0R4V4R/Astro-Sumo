@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="top" style="flex-grow: 1; flex-direction: row-reverse; align-items: flex-start; justify-content: center; align-self: center; align-content: center;">
+        <ui:ProgressBar value="90" title="Level Time" name="LevelTimeRemaining" high-value="90"/>
+        <ui:Label text="9thScore : 0" name="9thScore" double-click-selects-word="false" style="flex-direction: column-reverse; color: rgb(255, 251, 251); -unity-text-align: lower-left; white-space: pre; justify-content: space-between; align-items: stretch;"/>
+        <ui:Label text="10thScore : 0" name="10thScore" style="color: rgb(255, 255, 255);"/>
+        <ui:Label text="11thScore : 0" name="11thScore" style="color: rgb(255, 255, 255);"/>
+        <ui:Label text="12thScore : 0" name="12thScore" style="color: rgb(255, 255, 255);"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="bottom" style="flex-grow: 1; justify-content: flex-end;">
+        <ui:ProgressBar value="450" title="Game Time" name="GameTimeRemaining" high-value="450"/>
+    </ui:VisualElement>
+</ui:UXML>
