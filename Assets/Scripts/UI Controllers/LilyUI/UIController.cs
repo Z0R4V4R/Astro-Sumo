@@ -1,14 +1,16 @@
 using UnityEngine;
+using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 namespace LLesser
 {
     public class UIController : MonoBehaviour
     {
-    
-        private UIDocument uIDocument;
+        private UIDocument uiDocument;
          Label[] teamScoresUI;
+        private ProgressBar levelProgress;
         private ProgressBar gameProgress;
-        private int[] teanScore = new int[4];
+        private int[] teamScores = new int[4];
         private int levelTime;
 
     
@@ -16,7 +18,7 @@ namespace LLesser
         void Start()
         {
             uiDocument = GetComponent<UIDocument>();
-            var root = uiDocument.rootvisualElement;
+            var root = uiDocument.rootVisualElement;
 
             teamScoresUI = new Label[]
             {
@@ -26,8 +28,8 @@ namespace LLesser
                 root.Q<Label>("12thScore"),
             };
             
-            levelProgress = root.Q<ProgressBar>("LevelProgress");
-            gameProgress = root.Q<ProgressBar>("GameProgress");
+            levelProgress = root.Q<ProgressBar>("LevelTimeRemaining");
+            gameProgress = root.Q<ProgressBar>("GameTimeRemaining");
 
             //Determines the levelTime for this Scene
             int scenesRemaining = SceneManager.sceneCountInBuildSettings - GlobalEvents.SceneIndex;
@@ -36,7 +38,7 @@ namespace LLesser
             levelProgress.highValue = levelTime;
             levelProgress.value = levelTime;
 
-            InvokeRepeating(nameof(TimeRemaining), 0f, 1f);
+            InvokeRepeating("TimeRemaining", 0f, 1f);
 
         }
 
@@ -50,19 +52,19 @@ namespace LLesser
     
         void ProgressUpdate()
         {
-            levelProgress.value = currentLevelTime;
-            gameProgress.value = GlobalEvents.currentGameTime;
+            levelProgress.value = levelTime;
+            gameProgress.value = GlobalEvents.GameTime;
 
         }
 
         void ScoreUpdate()
         {
-            for (int i = 0; i <teamScores.length; i++)
+            for (int i = 0; i <GlobalEvents.TeamScores.Length; i++)
             {
                 
                 string teamGrade = (i + 9) + "th Grade";
-                teamScores[i] = GlobalEvents.teamScores[i];
-                teamScoresUI[i].text = teamGrade + ": " + teamScores[i];
+                teamScores[i] = GlobalEvents.TeamScores[i];
+                teamScoresUI[i].text = teamGrade + ": " + GlobalEvents.TeamScores[i];
             } 
         }
 
@@ -74,7 +76,7 @@ namespace LLesser
             SwitchScenes();
         }
 
-        void switchScenes()
+        void SwitchScenes()
         {
             if (levelTime == 0)
             {
@@ -88,7 +90,7 @@ namespace LLesser
                 
                 SceneManager.LoadScene(GlobalEvents.SceneIndex);
             }
-            else if (gameTime <= 0)
+            else if (GlobalEvents.GameTime <= 0)
             
             {
                 // Stop the game
