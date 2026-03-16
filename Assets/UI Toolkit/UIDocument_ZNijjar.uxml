@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="TopEliment" style="flex-grow: 1; flex-direction: row; align-items: flex-start; justify-content: center; align-self: center; align-content: center;">
+        <ui:ProgressBar value="90" title="Level Time" name="levelTimeRemaining" high-value="90"/>
+        <ui:Label text="9th Score: 0" name="9thScore" parse-escape-sequences="true" style="flex-direction: row; align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start; -unity-text-align: upper-left;"/>
+        <ui:Label text="10th Score: 0" name="10thScore" style="flex-direction: row; align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start;"/>
+        <ui:Label text="11th Score: 0" name="11thScore" style="align-items: stretch; flex-direction: row; justify-content: flex-start; align-self: auto; align-content: flex-start; -unity-text-align: lower-left;"/>
+        <ui:Label text="12th Score: 0" name="12Score" style="flex-direction: row; align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start;"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="BottmEliment" style="flex-grow: 1; flex-direction: column; justify-content: flex-end; align-self: center; align-content: center; align-items: center;">
+        <ui:ProgressBar value="450" title="Game Time" high-value="450" style="align-self: center; justify-content: flex-end; align-items: center;"/>
+    </ui:VisualElement>
+</ui:UXML>
