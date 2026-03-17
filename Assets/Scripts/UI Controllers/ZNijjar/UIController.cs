@@ -6,7 +6,7 @@ namespace ZNijjar.UI
 {
     public class UIController : MonoBehaviour
     {
-        private UIDocument uiDocument;
+        [SerializeField] private UIDocument uiDocument;
         private Label[] teamScoresUI;
         private ProgressBar levelProgress;
         private ProgressBar gameProgress;
@@ -15,6 +15,9 @@ namespace ZNijjar.UI
 
         private void Start()
         {
+            if (uiDocument == null)
+                uiDocument = GetComponent<UIDocument>();
+
             VisualElement root = uiDocument.rootVisualElement;
 
             // Task 2: Query Score Labels
@@ -50,9 +53,8 @@ namespace ZNijjar.UI
         {
             for (int i = 0; i < teamScores.Length; i++)
             {
-                string teamName = (9 + i) + "th Grade";
                 teamScores[i] = GlobalEvents.TeamScores[i];
-                teamScoresUI[i].text = teamName + ": " + teamScores[i];
+                teamScoresUI[i].text = teamScores[i].ToString();
             }
         }
 

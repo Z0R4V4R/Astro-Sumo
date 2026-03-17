@@ -1,12 +1,49 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="TopEliment" style="flex-grow: 1; flex-direction: row; align-items: flex-start; justify-content: center; align-self: center; align-content: center;">
-        <ui:ProgressBar value="90" title="Level Time" name="levelTimeRemaining" high-value="90"/>
-        <ui:Label text="9th Score: 0" name="9thScore" parse-escape-sequences="true" style="flex-direction: row; align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start; -unity-text-align: upper-left;"/>
-        <ui:Label text="10th Score: 0" name="10thScore" style="flex-direction: row; align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start;"/>
-        <ui:Label text="11th Score: 0" name="11thScore" style="align-items: stretch; flex-direction: row; justify-content: flex-start; align-self: auto; align-content: flex-start; -unity-text-align: lower-left;"/>
-        <ui:Label text="12th Score: 0" name="12Score" style="flex-direction: row; align-items: stretch; justify-content: flex-start; align-self: auto; align-content: flex-start;"/>
-    </ui:VisualElement>
-    <ui:VisualElement name="BottmEliment" style="flex-grow: 1; flex-direction: column; justify-content: flex-end; align-self: center; align-content: center; align-items: center;">
-        <ui:ProgressBar value="450" title="Game Time" high-value="450" style="align-self: center; justify-content: flex-end; align-items: center;"/>
+    <Style src="UIStyle_ZNijjar.uss" />
+    <ui:VisualElement name="root-container" class="root-container">
+
+        <!-- Header: Level Time -->
+        <ui:VisualElement name="header-bar" class="header-bar">
+            <ui:Label text="LEVEL" class="level-label" />
+            <ui:ProgressBar name="levelProgress" high-value="90" value="90" class="level-progress" />
+        </ui:VisualElement>
+
+        <!-- Score Cards -->
+        <ui:VisualElement name="score-row" class="score-row">
+            <ui:VisualElement class="team-9">
+                <ui:VisualElement class="score-card">
+                    <ui:Label text="9TH" class="team-label" />
+                    <ui:Label name="9thScore" text="0" class="score-value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="team-10">
+                <ui:VisualElement class="score-card">
+                    <ui:Label text="10TH" class="team-label" />
+                    <ui:Label name="10thScore" text="0" class="score-value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="team-11">
+                <ui:VisualElement class="score-card">
+                    <ui:Label text="11TH" class="team-label" />
+                    <ui:Label name="11thScore" text="0" class="score-value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="team-12">
+                <ui:VisualElement class="score-card">
+                    <ui:Label text="12TH" class="team-label" />
+                    <ui:Label name="12thScore" text="0" class="score-value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Spacer pushes footer to the bottom -->
+        <ui:VisualElement class="spacer" />
+
+        <!-- Footer: Game Time -->
+        <ui:VisualElement name="footer-bar" class="footer-bar">
+            <ui:Label text="GAME TIME" class="game-label" />
+            <ui:ProgressBar name="gameProgress" high-value="450" value="450" class="game-progress" />
+        </ui:VisualElement>
+
     </ui:VisualElement>
 </ui:UXML>

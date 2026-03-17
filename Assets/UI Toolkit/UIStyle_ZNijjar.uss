@@ -1,0 +1,150 @@
+/* ── Root ───────────────────────────────────────────────── */
+.root-container {
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+/* ── Header: Level Time ─────────────────────────────────── */
+.header-bar {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    height: 10%;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.level-label {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-right: 12px;
+    min-width: 60px;
+}
+
+.level-progress {
+    flex-grow: 1;
+    height: 12px;
+}
+
+/* Descendant selectors — fill is a grandchild inside __background */
+.level-progress .unity-progress-bar__background {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    border-width: 0;
+    height: 12px;
+}
+
+.level-progress .unity-progress-bar__progress {
+    background-color: rgb(0, 207, 255);
+    border-radius: 6px;
+}
+
+.level-progress .unity-progress-bar__title {
+    display: none;
+}
+
+/* ── Spacer ─────────────────────────────────────────────── */
+.spacer {
+    flex-grow: 1;
+}
+
+/* ── Score Row ──────────────────────────────────────────── */
+.score-row {
+    flex-direction: row;
+    height: 120px;
+    padding: 6px 8px;
+}
+
+/* Team wrappers — each takes an equal share of the full width */
+.team-9,
+.team-10,
+.team-11,
+.team-12 {
+    flex-grow: 1;
+    flex-direction: column;
+    margin: 4px;
+}
+
+.score-card {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.team-label {
+    font-size: 13px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.score-value {
+    font-size: 36px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+/* ── Per-team accent colors ─────────────────────────────── */
+.team-9 .score-card  { border-color: rgb(0, 180, 255); }
+.team-9 .team-label  { color: rgb(0, 180, 255); }
+
+.team-10 .score-card { border-color: rgb(57, 255, 20); }
+.team-10 .team-label { color: rgb(57, 255, 20); }
+
+.team-11 .score-card { border-color: rgb(255, 107, 43); }
+.team-11 .team-label { color: rgb(255, 107, 43); }
+
+.team-12 .score-card { border-color: rgb(189, 0, 255); }
+.team-12 .team-label { color: rgb(189, 0, 255); }
+
+/* ── Footer: Game Time ──────────────────────────────────── */
+.footer-bar {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    height: 8%;
+    border-top-width: 2px;
+    border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+.game-label {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-right: 12px;
+    min-width: 90px;
+}
+
+.game-progress {
+    flex-grow: 1;
+    height: 16px;
+}
+
+.game-progress .unity-progress-bar__background {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    border-width: 0;
+    height: 16px;
+}
+
+.game-progress .unity-progress-bar__progress {
+    background-color: rgb(255, 215, 0);
+    border-radius: 8px;
+}
+
+.game-progress .unity-progress-bar__title {
+    display: none;
+}

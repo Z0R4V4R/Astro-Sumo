@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0167370ca16499baddefb230b3d391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIController
+  uiDocument: {fileID: 0}
 --- !u!4 &1454148409
 Transform:
   m_ObjectHideFlags: 0
@@ -408,7 +409,7 @@ Transform:
   m_GameObject: {fileID: 1692414045}
   serializedVersion: 2
   m_LocalRotation: {x: -0.47713783, y: 0.0031569712, z: -0.0017140033, w: -0.8788212}
-  m_LocalPosition: {x: 1.2591887, y: 22.575531, z: -20.652311}
+  m_LocalPosition: {x: 1.28, y: 36.02, z: -23.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
